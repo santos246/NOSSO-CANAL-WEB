@@ -5,40 +5,165 @@ https://www.youtube-nocookie.com/embed/R7t3NJXWWkY?controls=0
 " frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe></body>
 <!----------------------------------------------------------------------------><hr/>
 
+<CENTER>
+<FONT SIZE=+2><H1>MEU CANAL</H1></FONT>
 
 
-<!---------------------------------------------------------------------------------->
-<iframe  width="100%" height="100%" src="
-https://www.youtube-nocookie.com/embed/tj71QGAwfVk
-" name="meu_iframe"></iframe>
-<!---------------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------------->
-<p><a href="
-https://www.youtube-nocookie.com/embed/EkuXZ-gKPng
-" target="meu_iframe">
-NOME
-</a></p>
-<!---------------------------------------------------------------------------------->
-<p><a href="
+
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<html>
+<head>
+<meta charset="utf8">
+<meta content-type="text/html">
+</head>
+<body>
+<!------------------------------------------------------------>
+MARQUE TODAS OPÇÕES<BR/>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<input type="checkbox" id="pacotei" name="Pacote" value="VIDEOS/
+A.Prova.de.Fogo
+.html"><label for="pacotei">
+A.Prova.de.Fogo
+</label><br>
+<!------------------------------------------------------------>
+<input type="checkbox" id="pacotei" name="Pacote" value="VIDEOS/
+A.Dama.e.o.Vagabundo.Dublado
+.html"><label for="pacotei">
+A.Dama.e.o.Vagabundo.Dublado
+</label><br>
+<!------------------------------------------------------------>
+<input type="checkbox" id="pacotei" name="Pacote" value="VIDEOS/
 LINK
-" target="meu_iframe">
+.html"><label for="pacotei">
 NOME
-</a></p>
-<!---------------------------------------------------------------------------------->
-<p><a href="
+</label><br>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+    <input type="checkbox" id="pacoteii" name="Pacote" value="./video2.mp4">
+    <label for="pacoteii">CREME</label>
+    <br>
+    <input type="checkbox" id="pacoteiii" name="Pacote" value="./video3.mp4">
+    <label for="pacoteiii">SACHE</label>
+    <br>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+    <button onClick="show()"> CLIQUE AQUI PARA VER O VÍDEO</button>   
+
+    <div id="videoDiv" style="display: none">
+        <video id="video" width="600" height="auto" autoplay controls>
+            <source id="source" src="" type="video/mp4">
+        </video>
+    </div>
+
+
+    <script type="text/javascript">
+        function show(){   
+            //para selecionar uma ou mais checkboxes, use querySelectAll
+            //será retornado um nodelist, similar a um array, com todos
+            //os cehckbox que foram selecionados pelo usuario, veja com //console.log(pacotes);
+            //pequena mudanca no nome da variavel
+            let pacotes = document.querySelectorAll('[name="Pacote"]:checked')		
+            let source = document.querySelector('#source');
+            document.querySelector('#videoDiv').style.display = 'block'	
+	    //agora você precisa carregar o primeiro video (se houver) 
+            //a partir do nodelist pacotes
+	    if(pacotes.length > 0){
+                let pacote_indice = 0;
+                let video = document.querySelector('#video');
+                //seta o atributo src do primeiro video 
+                //primeiro indice do nodelist, obtido a partir do atributo value
+                source.setAttribute('src', pacotes[pacote_indice].value);              
+	        video.load()
+                //nesse ponto você deve usar o evento onended no elemento #video
+	        //que é disparado quando o video termina de rodar
+                video.addEventListener('ended', function(){
+                    pacote_indice++;
+                    //tocara até o ultimo indice do array pacotes
+                    if(pacote_indice < pacotes.length){
+                        source.setAttribute('src', pacotes[pacote_indice].value);              
+	                video.load();                        
+                    }
+                });
+            }            
+        }
+    </script></body></html>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!-------------------
+https://stackoverflow.com/questions/5867985/full-screen-iframe-with-a-height-of-100
+--------------------->
+<body style="margin:0px;padding:0px;overflow:hidden"><iframe src="
 LINK
-" target="meu_iframe">
-NOME
-</a></p>
-<!---------------------------------------------------------------------------------->
-<p><a href="
-LINK
-" target="meu_iframe">
-NOME
-</a></p>
-<!---------------------------------------------------------------------------------->
+" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe></body>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
+<!------------------------------------------------------------>
 
 
 
 
 
+</center>
+
+<ul>
+<FONT SIZE=+2><H2>PROGRAMAÇÃO</H2></FONT>
+<li>Voce esta vendo <b><FONT COLOR="#088A08">belleza salvadoreña</FONT></li></b><br/>
+
+<li>Logo após <b><FONT COLOR="#088A08">Fazendo um barco-bicicleta de espuma usando um motor de 200 cc</FONT></li></b><br/>
+
+
+</ul>
+
+<center>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+
+<body bgcolor="#CCC"> </body>
+
+
+
+</CENTER>
